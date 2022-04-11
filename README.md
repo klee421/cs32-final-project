@@ -60,10 +60,7 @@ the script outputs a list of dictionary that looks like:
   {'name': 'PRINCETON', 'fee': 5000, 'period': [(2, 2021), (11, 2021)]}
 ]
 
-### Work To Be Done
-
-#### Next Step
-Solve the second (and last) high-level sub-problem. That is, given the list of dictionaries as shown above, I need to produce a list of dictionaries that looks like:
+I solved the second (and last) high-level sub-problem as well. That is, given the list of dictionaries as shown above, my script produces a list of dictionaries that looks like:
 
 [
   {'name': 'HARVARD', 'Dec 2020': 3000, 'Jan 2021': 3000, 'Feb 2021': 3000,..., 'Dec 2021': 3000, 'Jan 2022': 3000}, 
@@ -71,19 +68,25 @@ Solve the second (and last) high-level sub-problem. That is, given the list of d
   {'name': 'PRINCETON', 'Dec 2020': 0, 'Jan 2021': 0, 'Feb 2021': 5000,..., 'Nov 2021': 5000, 'Dec 2021': 5000, 'Jan 2022': 0}, 
 ]
 
-And then, I will convert this list of dictionaries into a table that looks like, downloadable in csv format:
+and then, converts this list of dictionaries into a table that looks like:
 
 | Name     | Dec 20 | Jan 21 | Feb 21 | Mar 21 | Apr 21 | May 21 | Jun 21 | Jul 21 | Aug 21 | Sep 21 | Oct 21 | Nov 21 | Dec 21 | Jan 22 |
 |----------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
 | HARVARD  | 3000   | 3000   | 3000   | 3000   | 3000   | 3000   | 3000   | 3000   | 3000   | 3000   | 3000   | 3000   | 3000   | 3000   |
-| YALE     | 0      | 4000   | 4000   | 4000   | 4000   | 4000   | 4000   | 0      | 0      | 0      | 0      | 0      | 0      | 0      |
-| PRINCETON| 0      | 0      | 5000   | 5000   | 5000   | 5000   | 5000   | 5000   | 5000   | 5000   | 5000   | 5000   | 5000   | 0      |
+| YALE     | N/A    | 4000   | 4000   | 4000   | 4000   | 4000   | 4000   | N/A    | N/A    | N/A    | N/A    | N/A    | N/A    | N/A    |
+| PRINCETON| N/A    | N/A    | 5000   | 5000   | 5000   | 5000   | 5000   | 5000   | 5000   | 5000   | 5000   | 5000   | 5000   | N/A    |
 
+and then saves an excel file that contains this table
+
+### Work To Be Done
+
+#### Next Step
+1. edit the script so that it can handle other kinds of contracts (renewal contracts and order forms) that follow the initial contract 
+2. edit the scrip so that it can handle sales contracts for other product lines 
 
 #### Next Next Step
 1. allow user to input lots of contract pdfs easily by accepting a zip file of contracts or asking the program to parse through an entire folder of contract pdfs (as of now, the user has to type in the name of every contract she wants to process in the command line)
-2. handle other kinds of contracts (renewal contracts and order forms) that follow the initial contract 
-3. handle more than one product line
+2. instead of creating a new excel file, import the table into a tab of an existing excel file so that I can automatically run the analytics on the excel spreadsheet (without having to copy the data to the hard-coded cells of the existing spreadsheet)
 
 ### Limitations
 I've completed the part where I extract data from contracts in pdf. But my script would work only for contracts that have a particular format. It's not generalizable to to all kinds of sales contracts that other companies could use. Not sure how I can overcome this limitation without natural language processing. 
