@@ -80,9 +80,13 @@ and then saves an excel file that contains this table
 
 ### Work To Be Done
 
+FIXME:
+1. extracting client name from order forms is kind of weird
+
 #### Next Step
 1. edit the script so that it can handle other kinds of contracts (renewal contracts and order forms) that follow the initial contract 
 2. edit the scrip so that it can handle sales contracts for other product lines 
+
 
 #### Next Next Step
 0. allow the user to input an existing excel spreadsheet and contracts so that the user doesn't have to update all previous contracts everytime she wants to use the program; data should be extrated from the contracts and the spreadsheet should be updated accordingly
