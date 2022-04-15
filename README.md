@@ -78,7 +78,7 @@ and then, converts this list of dictionaries into a table that looks like:
 
 and then saves an excel file that contains this table
 
-I updated the scrip such that it can handle other kinds of contracts (eg. renewal contracts and order forms). So now, when I input the following set of contracts:
+I updated the script such that it can handle other kinds of contracts (eg. renewal contracts and order forms). So now, when I input the following set of contracts:
 
 [Harvard_orderform.pdf](https://github.com/klee421/cs32-final-project/files/8494211/Harvard_orderform.pdf)
 [Harvard_renewal.pdf](https://github.com/klee421/cs32-final-project/files/8494212/Harvard_renewal.pdf)
@@ -91,6 +91,9 @@ I updated the scrip such that it can handle other kinds of contracts (eg. renewa
 my script outputs this spreadsheet:
 [output.xlsx](https://github.com/klee421/cs32-final-project/files/8494224/output.xlsx)
 
+I updated the script such that it can handle other contracts for other product lines. 
+I updated the script such that rows are ordered based on subscription start date. 
+
 
 ### Work To Be Done
 
@@ -98,10 +101,6 @@ FIXME:
 1. extracting client name from order forms is kind of weird
 
 #### Next Step
-1. edit the scrip so that it can handle sales contracts for other product lines 
-
-
-#### Next Next Step
 0. allow the user to input an existing excel spreadsheet and contracts so that the user doesn't have to update all previous contracts everytime she wants to use the program; data should be extrated from the contracts and the spreadsheet should be updated accordingly
 1. allow user to input lots of contract pdfs easily by accepting a zip file of contracts or asking the program to parse through an entire folder of contract pdfs (as of now, the user has to type in the name of every contract she wants to process in the command line)
 2. instead of creating a new excel file, import the table into a tab of an existing excel file so that I can automatically run the analytics on the excel spreadsheet (without having to copy the data to the hard-coded cells of the existing spreadsheet)
