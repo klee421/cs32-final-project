@@ -78,14 +78,27 @@ and then, converts this list of dictionaries into a table that looks like:
 
 and then saves an excel file that contains this table
 
+I updated the scrip such that it can handle other kinds of contracts (eg. renewal contracts and order forms). So now, when I input the following set of contracts:
+
+[Harvard_orderform.pdf](https://github.com/klee421/cs32-final-project/files/8494211/Harvard_orderform.pdf)
+[Harvard_renewal.pdf](https://github.com/klee421/cs32-final-project/files/8494212/Harvard_renewal.pdf)
+[Harvard.pdf](https://github.com/klee421/cs32-final-project/files/8494213/Harvard.pdf)
+[Princeton_orderform.pdf](https://github.com/klee421/cs32-final-project/files/8494216/Princeton_orderform.pdf)
+[Princeton.pdf](https://github.com/klee421/cs32-final-project/files/8494217/Princeton.pdf)
+[Yale_renewal.pdf](https://github.com/klee421/cs32-final-project/files/8494218/Yale_renewal.pdf)
+[Yale.pdf](https://github.com/klee421/cs32-final-project/files/8494219/Yale.pdf)
+
+my script outputs this spreadsheet:
+[output.xlsx](https://github.com/klee421/cs32-final-project/files/8494224/output.xlsx)
+
+
 ### Work To Be Done
 
 FIXME:
 1. extracting client name from order forms is kind of weird
 
 #### Next Step
-1. edit the script so that it can handle other kinds of contracts (renewal contracts and order forms) that follow the initial contract 
-2. edit the scrip so that it can handle sales contracts for other product lines 
+1. edit the scrip so that it can handle sales contracts for other product lines 
 
 
 #### Next Next Step
