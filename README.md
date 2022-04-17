@@ -93,6 +93,7 @@ my script outputs this spreadsheet:
 
 I updated the script such that it can handle other contracts for other product lines. 
 I updated the script such that rows are ordered based on subscription start date. 
+I updated the script such that instead of creating a new excel file, import the table into a tab of an existing excel file so that I can automatically run the analytics on the excel spreadsheet (without having to copy the data to the hard-coded cells of the existing spreadsheet).
 
 
 ### Work To Be Done
@@ -101,9 +102,8 @@ FIXME:
 1. extracting client name from order forms is kind of weird
 
 #### Next Step
-0. allow the user to input an existing excel spreadsheet and contracts so that the user doesn't have to update all previous contracts everytime she wants to use the program; data should be extrated from the contracts and the spreadsheet should be updated accordingly
-1. allow user to input lots of contract pdfs easily by accepting a zip file of contracts or asking the program to parse through an entire folder of contract pdfs (as of now, the user has to type in the name of every contract she wants to process in the command line)
-2. instead of creating a new excel file, import the table into a tab of an existing excel file so that I can automatically run the analytics on the excel spreadsheet (without having to copy the data to the hard-coded cells of the existing spreadsheet)
+1. doctrings for functions and comments to explain logic (look up how to write good docstings)
+2. design decision explanation (eg. why separate definition for extracting different kinds of info from contract despite there being repeating lines of code 
 
 ### Limitations
 I've completed the part where I extract data from contracts in pdf. But my script would work only for contracts that have a particular format. It's not generalizable to to all kinds of sales contracts that other companies could use. Not sure how I can overcome this limitation without natural language processing. 
