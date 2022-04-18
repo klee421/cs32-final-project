@@ -98,12 +98,11 @@ I updated the script such that instead of creating a new excel file, import the 
 
 ### Work To Be Done
 
-FIXME:
 1. extracting client name from order forms is kind of weird
-
-#### Next Step
-1. doctrings for functions and comments to explain logic (look up how to write good docstings)
-2. design decision explanation (eg. why separate definition for extracting different kinds of info from contract despite there being repeating lines of code 
+2. print statements along the way to make sure things are running well
+    1. Print unpolished data after going through each contract
+    2. And print something saying that the contract has been fully processed
+3. design decision explanation (eg. why separate definition for extracting different kinds of info from contract despite there being repeating lines of code 
 
 ### Limitations
 I've completed the part where I extract data from contracts in pdf. But my script would work only for contracts that have a particular format. It's not generalizable to to all kinds of sales contracts that other companies could use. Not sure how I can overcome this limitation without natural language processing. 
