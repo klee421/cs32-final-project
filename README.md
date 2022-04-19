@@ -69,13 +69,12 @@ You may be wondering why I have the extra step of converting pdfs into sets of i
 
 The following packages are required to run this program:
 
-1. pdf2image
-2. cv2
-3. pytesseract
-5. os
-6. sys
-7. pandas
-8. xlwings
+1. pdf2image (to turn a pdf file into images)
+2. cv2 (to load an image)
+3. pytesseract (to analyze a loaded image)
+4. os (to go through pdf and image files in the folder)
+5. pandas (to turn data into excel-exportable dataframe)
+6. xlwings (to export data to an existing excel workbook)
 
 
 <!-- HOW TO USE -->
