@@ -6,7 +6,6 @@ import cv2
 import pytesseract
 from pdf2image import convert_from_path
 import os
-import sys
 
 
 def pdf_to_text(pdf):
