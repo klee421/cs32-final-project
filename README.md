@@ -1,7 +1,7 @@
 <h3 align="center">Revenue Tracker Program for B2B SaaS Startups </h3>
 
   <p align="center">
-    This program is intended to strealine the revenuement management process for B2B SaaS startups that have a subcription-based business model, thereby saving such companies' operations person a lot of time. 
+    This program is intended to streamline the revenue management process for B2B SaaS startups that have a subscription-based business model, thereby saving such companies' operations person a lot of time. 
 
 </div>
 
@@ -24,7 +24,7 @@
 ## About The Project
 
 ### The Why
-The project is intended to address a pain point that I currently have at work. I am currently the Chief of Staff at a B2B SaaS startup called [MarqVision](https://marqvision.com) and part of my job involves keeping track of the revenues we are generating from each client that we collect as monthly subscription fees. But the way I am currently doing this work is quite inefficient. Whenever we sign with a new client, I open the signed contract and then manually input the subscription fees month by month in a spreadsheet by looking at the subscription fee and duration information on the contract. And whenever an existing client upgrades its subscription plan, I open the sigend order form and then manually edit the subscription fees for the months to which the plan change applies. In order to save myself some time, I decided to build a program that can do this work for me, automatically. 
+The project is intended to address a pain point that I currently have at work. I am currently the Chief of Staff at a B2B SaaS startup called [MarqVision](https://marqvision.com) and part of my job involves keeping track of the revenues we are generating from each client that we collect as monthly subscription fees. But the way I am currently doing this work is quite inefficient. Whenever we sign with a new client, I open the signed contract and then manually input the subscription fees month by month in a spreadsheet by looking at the subscription fee and duration information on the contract. And whenever an existing client upgrades its subscription plan, I open the signed order form and then manually edit the subscription fees for the months to which the plan change applies. In order to save myself some time, I decided to build a program that can do this work for me, automatically. 
 
 ### The What
 
