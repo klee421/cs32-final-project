@@ -14,6 +14,7 @@
     <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#how-to-use">How to Use</a></li>
+    <li><a href="#future-work">Future Work</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -57,7 +58,7 @@ The problem can be decomposed at a high-level as follows:
 Since the first sub-problem is the most difficult to tackle, provided below is how this sub-problem can be further decomposed:
 
 1. convert contract pdfs to image files 
-2. convert the content of the image files into strings
+2. convert the text content of the image files into strings
 3. extract the data required to build the table from these strings
 
 You may be wondering why I have the extra step of converting pdfs into sets of image files before extracting the text of the contracts into strings. This extra step is required because you can't directly access text from a pdf once it's signed. Therefore, we need to turn those pdfs into sets of image files and then pass those images through an OCR model to extract the text we need.
@@ -74,7 +75,7 @@ The following packages are required to run this program:
 3. pytesseract (to analyze a loaded image)
 4. os (to go through pdf and image files in the folder)
 5. pandas (to turn data into excel-exportable dataframe)
-6. xlwings (to export data to an existing excel workbook)
+6. xlwings (to export the dataframe to an existing excel workbook)
 
 
 <!-- HOW TO USE -->
@@ -83,15 +84,18 @@ The following packages are required to run this program:
 Provided below are the steps you need to take to properly use the program:
 
 1. Install any package among those listed above that you don't already have. 
-2. Download all of the files in the main branch to a new folder in your local machine. Make sure to keep all the files in the same folder. Besides the python scripts, there should be 18 pdf files and 1 excel file in this folder. These 18 pdf files are the some fake contracts I signed to use as sample inputs to this program. The excel file is the pre-coded workbook to which our data needs to be exported. 
-3. Open this folder in Visual Studio Code
+2. Download all of the files in the main branch to a new folder in your local machine. Make sure to keep all the files in the same folder. Besides the python scripts, there should be 18 pdf files and 1 excel file in this folder. These 18 pdf files are the some fake contracts I signed to use as sample inputs to this program. The excel file is the pre-coded workbook to which our data needs to be exported. When a new contract is signed, all I need to do is add this contract pdf file to the folder and re-run the program. 
+3. Open this folder as a new project in Visual Studio Code
 4. Execute the script "rev_tracker.py" in the terminal
 
-The program should export the following table into the sheet "Revenue by Client" in the workbook "Revenue Analytics"
+Given the set of 18 fake contracts uploaded here, the program should export the following table into the sheet "Revenue by Client" in the workbook "Revenue Analytics"
 
 <img width="1250" alt="image" src="https://user-images.githubusercontent.com/102482222/164077175-fd39e04f-2b00-41a4-ba7a-2fbffa2aef59.png">
 
+<!-- FUTURE WORK -->
+## Future Work
 
+If I had more time and was more experienced with computer science, I would like to further develop this program such that it can be used more generally. Currently, my program is capable of extracting data only from MarqVision's sales contracts. That is, if I fed the program with a sales contract that has a different format, it wouldn't know what the name of the client is, how much the client is agreeing to pay for its monthly subscription fees, or the length of the subscription. In order to fix this problem, what I ultimately need to build is a program that can read a contract as a human would and extract the relevant information regardless of the contract's format. In order to achieve this, the program would have to be eqiupped with a natural language processing (NLP) capability. 
 
 <!-- CONTACT -->
 ## Contact
