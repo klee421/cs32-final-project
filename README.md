@@ -84,7 +84,7 @@ The following packages are required to run this program:
 Provided below are the steps you need to take to properly use the program:
 
 1. Install any package among those listed above that you don't already have. 
-2. Download all of the files in the main branch to a new folder in your local machine. Make sure to keep all the files in the same folder. Besides the python scripts, there should be 18 pdf files and 1 excel file in this folder. These 18 pdf files are the some fake contracts I signed to use as sample inputs to this program. The excel file is the pre-coded workbook to which our data needs to be exported. When a new contract is signed, all I need to do is add this contract pdf file to the folder and re-run the program. 
+2. Download all of the files in the main branch to a new folder in the desktop of your local machine. Make sure to keep all the files in the same folder. Besides the python scripts, there should be 18 pdf files and 1 excel file in this folder. These 18 pdf files are the some fake contracts I signed to use as sample inputs to this program. The excel file is the pre-coded workbook to which our data needs to be exported. When a new contract is signed, all I need to do is add this contract pdf file to the folder and re-run the program. 
 3. Open this folder as a new project in Visual Studio Code
 4. Execute the script "rev_tracker.py" in the terminal
 
